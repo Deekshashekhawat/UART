@@ -9,19 +9,21 @@ reg [7:0]data;
 reg [2:0]index;
 reg[1:0]state=idle;
 
-always@(posedge clk)begin 
+/*always@(posedge clk)begin 
  if(rst) begin 
   tx1=1'b1;
   state<=idle;
   index<=3'b0;
 end
 end
+*/
 
 always@(posedge clk)begin 
  if(rst) begin 
-  tx1=1'b1;
+  tx1<=1'b1;
   state<=idle;
   index<=3'b0;
+  data<=8'b0;
 end
  else begin
   case(state)
