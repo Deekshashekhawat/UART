@@ -11,9 +11,7 @@ modelsim.ini
 # Backup files
 *.bak
 
-# Waveforms
-*.wlf
-*.vcd
+
 
 # VS Code
 .vscode/
